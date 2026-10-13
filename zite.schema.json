@@ -1,0 +1,604 @@
+{
+  "tables": [
+    {
+      "id": "t4Ufmji9L7E",
+      "sdkName": "issues",
+      "name": "Issues",
+      "primaryFieldId": "fizgg9xiEfW",
+      "fields": [
+        {
+          "id": "fizgg9xiEfW",
+          "sdkName": "title",
+          "definition": {
+            "name": "Title",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fkoEnBe8MMC",
+          "sdkName": "description",
+          "definition": {
+            "name": "Description",
+            "type": "long_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "ftFW9zkkJ7y",
+          "sdkName": "status",
+          "definition": {
+            "name": "Status",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "caV6",
+                  "label": "Open",
+                  "color": "purple"
+                },
+                {
+                  "value": "41Vo",
+                  "label": "In Progress",
+                  "color": "orange"
+                },
+                {
+                  "value": "79oy",
+                  "label": "Resolved",
+                  "color": "blue"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "fmN6TrzgM5i",
+          "sdkName": "priority",
+          "definition": {
+            "name": "Priority",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "gGiD",
+                  "label": "Critical",
+                  "color": "purple"
+                },
+                {
+                  "value": "cBp2",
+                  "label": "High",
+                  "color": "orange"
+                },
+                {
+                  "value": "iJEA",
+                  "label": "Medium",
+                  "color": "blue"
+                },
+                {
+                  "value": "ndtU",
+                  "label": "Low",
+                  "color": "gray"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "fiPaWLUsfeM",
+          "sdkName": "category",
+          "definition": {
+            "name": "Category",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fmQpk3LPVms",
+          "sdkName": "impactScore",
+          "definition": {
+            "name": "Impact Score",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 1
+            }
+          }
+        },
+        {
+          "id": "f8drqZmWT7h",
+          "sdkName": "reasoning",
+          "definition": {
+            "name": "Reasoning",
+            "type": "long_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "faY6mk9pKhX",
+          "sdkName": "actionItems",
+          "definition": {
+            "name": "Action Items",
+            "type": "long_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fnA3AVD1UnW",
+          "sdkName": "owner",
+          "definition": {
+            "name": "Owner",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "f73QHf5bnYi",
+          "sdkName": "createdAt",
+          "definition": {
+            "name": "Created At",
+            "type": "created_at",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        },
+        {
+          "id": "fqGyRPY49EJ",
+          "sdkName": "feedback",
+          "definition": {
+            "name": "Feedback",
+            "type": "linked_record",
+            "template": {
+              "tableId": "t3DiDAWQpKP",
+              "isInverse": true,
+              "allowMultiple": true,
+              "inverseFieldId": "fw1PAxnC5wP"
+            }
+          }
+        },
+        {
+          "id": "f1C3iY6k7a2",
+          "sdkName": "duplicateCount",
+          "definition": {
+            "name": "Duplicate Count",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 0
+            }
+          }
+        },
+        {
+          "id": "fg6cETzLyoK",
+          "sdkName": "trend",
+          "definition": {
+            "name": "Trend",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "f9dPRWkfMr2",
+          "sdkName": "alerted",
+          "definition": {
+            "name": "Alerted",
+            "type": "checkbox",
+            "template": {}
+          }
+        }
+      ]
+    },
+    {
+      "id": "t3DiDAWQpKP",
+      "sdkName": "feedback",
+      "name": "Feedback",
+      "primaryFieldId": "fvotwthZbN2",
+      "fields": [
+        {
+          "id": "fvotwthZbN2",
+          "sdkName": "content",
+          "definition": {
+            "name": "Content",
+            "type": "long_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "f3KAM1K8W1i",
+          "sdkName": "source",
+          "definition": {
+            "name": "Source",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "otEV",
+                  "label": "Review",
+                  "color": "purple"
+                },
+                {
+                  "value": "xiCn",
+                  "label": "Survey",
+                  "color": "orange"
+                },
+                {
+                  "value": "f5Uu",
+                  "label": "Support",
+                  "color": "blue"
+                },
+                {
+                  "value": "39Mz",
+                  "label": "Social",
+                  "color": "gray"
+                },
+                {
+                  "value": "hosr",
+                  "label": "Other",
+                  "color": "red"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "fry2ehvvoka",
+          "sdkName": "customerName",
+          "definition": {
+            "name": "Customer Name",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fbmq88McF4y",
+          "sdkName": "rating",
+          "definition": {
+            "name": "Rating",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 1
+            }
+          }
+        },
+        {
+          "id": "fkeNnTGPBFp",
+          "sdkName": "submittedAt",
+          "definition": {
+            "name": "Submitted At",
+            "type": "datetime",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        },
+        {
+          "id": "fnqhY1W7fbX",
+          "sdkName": "sentiment",
+          "definition": {
+            "name": "Sentiment",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "dpfp",
+                  "label": "Positive",
+                  "color": "purple"
+                },
+                {
+                  "value": "s43B",
+                  "label": "Neutral",
+                  "color": "orange"
+                },
+                {
+                  "value": "74Hs",
+                  "label": "Negative",
+                  "color": "blue"
+                },
+                {
+                  "value": "c7H9",
+                  "label": "Mixed",
+                  "color": "gray"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "f33cHudwwQC",
+          "sdkName": "sentimentScore",
+          "definition": {
+            "name": "Sentiment Score",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 2
+            }
+          }
+        },
+        {
+          "id": "f8NguLAAmHW",
+          "sdkName": "category",
+          "definition": {
+            "name": "Category",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fpsnfA1gtvE",
+          "sdkName": "topics",
+          "definition": {
+            "name": "Topics",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "f1FKQdkKHcX",
+          "sdkName": "complaint",
+          "definition": {
+            "name": "Complaint",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "feUhJc18GeW",
+          "sdkName": "urgency",
+          "definition": {
+            "name": "Urgency",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 1
+            }
+          }
+        },
+        {
+          "id": "f8bZ2uSy72G",
+          "sdkName": "analyzed",
+          "definition": {
+            "name": "Analyzed",
+            "type": "checkbox",
+            "template": {}
+          }
+        },
+        {
+          "id": "foCM1KEv7fP",
+          "sdkName": "manuallyCorrected",
+          "definition": {
+            "name": "Manually Corrected",
+            "type": "checkbox",
+            "template": {}
+          }
+        },
+        {
+          "id": "fw1PAxnC5wP",
+          "sdkName": "issue",
+          "definition": {
+            "name": "Issue",
+            "type": "linked_record",
+            "template": {
+              "tableId": "t4Ufmji9L7E",
+              "isInverse": false,
+              "allowMultiple": true,
+              "inverseFieldId": "fqGyRPY49EJ"
+            }
+          }
+        },
+        {
+          "id": "f1ecLQWCVbL",
+          "sdkName": "confidence",
+          "definition": {
+            "name": "Confidence",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 2
+            }
+          }
+        },
+        {
+          "id": "fvG6N8JE5Gh",
+          "sdkName": "duplicateOf",
+          "definition": {
+            "name": "Duplicate Of",
+            "type": "single_line_text",
+            "template": {}
+          }
+        }
+      ]
+    },
+    {
+      "id": "tdPmCTLrUwE",
+      "sdkName": "adaptionRules",
+      "name": "Adaption Rules",
+      "primaryFieldId": "fjDw6pTtHCR",
+      "fields": [
+        {
+          "id": "fjDw6pTtHCR",
+          "sdkName": "rule",
+          "definition": {
+            "name": "Rule",
+            "type": "long_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fw4FCgCstq9",
+          "sdkName": "ruleType",
+          "definition": {
+            "name": "Rule Type",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "pfvY",
+                  "label": "Business Context",
+                  "color": "purple"
+                },
+                {
+                  "value": "nHah",
+                  "label": "Category Definition",
+                  "color": "orange"
+                },
+                {
+                  "value": "3qXQ",
+                  "label": "Correction Example",
+                  "color": "blue"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "fk8q9RzjNVY",
+          "sdkName": "active",
+          "definition": {
+            "name": "Active",
+            "type": "checkbox",
+            "template": {
+              "defaultValue": true
+            }
+          }
+        },
+        {
+          "id": "faXVQMgCZon",
+          "sdkName": "createdAt",
+          "definition": {
+            "name": "Created At",
+            "type": "created_at",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "tm6tCDJfgFD",
+      "sdkName": "reports",
+      "name": "Reports",
+      "primaryFieldId": "f4nvsxX98q3",
+      "fields": [
+        {
+          "id": "f4nvsxX98q3",
+          "sdkName": "title",
+          "definition": {
+            "name": "Title",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fpf5tkBZWM2",
+          "sdkName": "content",
+          "definition": {
+            "name": "Content",
+            "type": "long_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "f3NjPPbYY7F",
+          "sdkName": "feedbackCount",
+          "definition": {
+            "name": "Feedback Count",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 1
+            }
+          }
+        },
+        {
+          "id": "fszFnwfD937",
+          "sdkName": "createdAt",
+          "definition": {
+            "name": "Created At",
+            "type": "created_at",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "twT6soj6Z4f",
+      "sdkName": "alertSettings",
+      "name": "Alert Settings",
+      "primaryFieldId": "fqED4WoQqZB",
+      "fields": [
+        {
+          "id": "fqED4WoQqZB",
+          "sdkName": "email",
+          "definition": {
+            "name": "Email",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "f8jHMaMs2yM",
+          "sdkName": "enabled",
+          "definition": {
+            "name": "Enabled",
+            "type": "checkbox",
+            "template": {}
+          }
+        },
+        {
+          "id": "f5vi2BHUvmi",
+          "sdkName": "notifyCriticalIssues",
+          "definition": {
+            "name": "Notify Critical Issues",
+            "type": "checkbox",
+            "template": {}
+          }
+        },
+        {
+          "id": "fwrttgD3dNS",
+          "sdkName": "notifySentimentDrift",
+          "definition": {
+            "name": "Notify Sentiment Drift",
+            "type": "checkbox",
+            "template": {}
+          }
+        },
+        {
+          "id": "fdq2i6cSoQD",
+          "sdkName": "lastSent",
+          "definition": {
+            "name": "Last Sent",
+            "type": "datetime",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

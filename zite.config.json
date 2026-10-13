@@ -1,0 +1,24 @@
+{
+  "project": {
+    "name": "InsightFlow Feedback Analyzer",
+    "basePublicIdentifier": "1befab1470021400"
+  },
+  "integrations": {
+    "openai": {
+      "type": "openai",
+      "connectionId": "svc_561779"
+    },
+    "gemini": {
+      "type": "gemini",
+      "connectionId": "svc_561800"
+    },
+    "email": {
+      "type": "email",
+      "provider": "zite_email"
+    },
+    "gemini": {
+      "type": "gemini",
+      "connectionId": "svc_561800"
+    }
+  }
+}
